@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georama">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="StyleL.css" />
+    
+  </head>
+  <body >
+    <style>
+      body {
+        background-image: url('Images\  Login-pic.jpg');
+      }
+      </style>  
+    <div class="bg">
+        <div class="login" id="hoverelement">
+            <h1><b>Login</b></h1>
+            <input type="text" id="email" placeholder="Email" required>
+            <input type="password" id="pass" placeholder="Password" required>
+            <input type="button" value="Login" onclick="func()">
+            <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+        </div>
+
+
+        <script>
+            function func(){
+                // console.log("Hello");
+                var email=document.getElementById("email").value;
+                var passw=document.getElementById('pass').value;
+                if(email==''||passw==''){
+                    alert("Please enter the fields");
+                }
+                else if(email=='navaneethnaren6@gmail.com' && passw=='1510'){
+                    alert("Successful login");
+                    window.location.assign("MainPage1.html");
+                }
+                else{
+                    alert("Wrong credentails");
+                }
+            }
+        </script>
+
+
+    </div>
+  </body>
+</html>

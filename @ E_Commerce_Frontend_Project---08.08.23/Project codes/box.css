@@ -1,0 +1,53 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr 3fr; /* Two equal columns */
+  }
+  .nav {
+	border: 1px solid black;
+  }
+  .mainss {
+	border: 1px solid black;
+  }
+  .box {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 3fr; /* Two equal columns */
+	border: 2px solid green;
+  }
+  .left {
+	background-image: url("./ex.jpg");
+	background-color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40%;
+  }
+  
+  .filter,
+  .asc,
+  .des,
+  .prices,
+  .pricesRev {
+	margin:5px;
+	text-align: center;
+	padding-bottom: 20px;
+	border: 0.5px solid black;
+  }
+  .asc,
+  .des,
+  .prices .pricesRev {
+	border: 0.5px solid black;
+  }
+  
+  .right {
+	padding: 30px;
+  }
+  .heading {
+	padding-bottom: 20px;
+	font-size: large;
+	font-weight: 300;
+  }
+  .price {
+	color: red;
+	font-size: x-large;
+	font-weight: 500;
+  }
